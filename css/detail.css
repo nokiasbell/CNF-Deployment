@@ -1,0 +1,170 @@
+/* .container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+} */
+
+.property {
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    bottom: 0;
+    right: 80%;
+    top: 128px;
+    /* max-width: 300px; */
+    background-color: #f1f1f1;
+    position: fixed;
+    /* height: 100%; */
+    /* padding-top: 30px; */
+    padding-left: 30px;
+    /* overflow-y: scroll; */
+    border-right: 1px solid rgba(0,0,0,.12);
+}
+.property label,
+.property input {
+    display: block;
+    font-family: Nokia Pure Text Regular,Arial,sans-serif;
+    font-size: 1em;
+}
+.property label {
+    color: rgba(0,0,0,.6);
+    font-weight: 700;
+}
+.property input{
+    /* outline: none; */
+    background-color: inherit;
+    border: none;
+
+}
+
+.property input:focus {
+    outline: none;
+}
+
+
+.operation {
+    display: flex;
+    flex-direction: column;
+    left: 20%;
+    bottom: 0;
+    right: 50%;
+    top: 128px;
+    max-width: 100%;
+    background-color: #f1f1f1;
+    position: fixed;
+    /* height: 100%; */
+    padding-left: 30px;
+    overflow-y: scroll;
+    border-right: 1px solid rgba(0,0,0,.12);
+}
+h3 {
+    color: #124191;
+}
+
+.operation a {
+    display: inline-block;
+    border: 1px solid transparent;
+    padding: 10px 10px;
+    color: #124191;
+}
+
+.operation a:hover {
+    /* border: 1px solid black; */
+    color: #095ae8;
+    background: rgba(0,0,0,.2);
+    cursor: pointer;
+    border-radius: 2px;
+
+}
+
+.history {
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    bottom: 0;
+    right: 0;
+    top: 128px;
+    /* max-width: 100%; */
+    background-color: #f1f1f1;
+    position: fixed;
+    /* height: 100%; */
+    padding-left: 30px;
+    overflow-y: scroll;
+    z-index: 1000;
+}
+
+
+.workbench-wrapper {
+    display: none;
+    background: #f1f1f1;
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    right: 0;
+    top: 128px;
+    z-index: 1001;
+    /* width: 100%; */
+}
+
+.workbench-wrapper h4 {
+    padding-left: 30px;
+}
+
+.wb-row-header {
+    background: rgba(0,0,0,.2);
+    font-weight: 600;
+}
+.wb-row label{
+    width: 100px;
+    text-align: left;
+    padding-right: 5px;
+    width: 30%;
+}
+.wb-row select,
+.wb-row input {
+    border: none;
+    background: inherit;
+    width: 70%;
+}
+
+.wb-row select:focus,
+.wb-row input:focus {
+    outline: none;
+}
+
+.wb-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0;
+    padding-top: 2px;
+    /* border: 1px solid rgba(0,0,0,.12); */
+}
+.wb-row:hover {
+    background: rgba(0,0,0,.2);
+}
+
+.wb-btn-cancel,
+.wb-btn-submit {
+    border: none;
+    border-radius: 2px;
+    font-family: Nokia Pure Text Medium,Arial,sans-serif;
+    text-transform: uppercase;
+    padding: 8px;
+    text-decoration: none;
+}
+
+.wb-btn-cancel:hover,
+.wb-btn-submit:hover {
+    cursor: pointer;
+}
+
+.wb-btn-cancel {
+    background-color: transparent;
+    color: rgba(18, 65, 145, 1);
+}
+
+.wb-btn-submit {
+    background-color: rgba(18, 65, 145, 1);
+    color: #fff;
+}
